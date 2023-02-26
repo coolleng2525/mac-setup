@@ -12,6 +12,19 @@ This can be enabled manually by editing the relevant PAM file:
 sudo vim /etc/pam.d/sudo
 ```
 
+
+new 
+
+```sh
+sudo vim /etc/sudoers
+
+%admin          ALL = (ALL)  ALL
+to
+%admin          ALL = (ALL) NOPASSWD: ALL
+
+```
+
+
 Add the following to the top of the list:
 
 ```sh
@@ -31,3 +44,5 @@ This can also be done as a one-liner by running:
 ```sh
 sudo sed -i '' '1a\'$'\n''auth       sufficient     pam_tid.so'$'\n' /etc/pam.d/sudo
 ```
+
+

@@ -85,7 +85,7 @@ This plugin auto suggests any of the previous commands. Pretty handy! To select 
 Clone the zsh-autosuggestions plugin’s repo and copy it to the “Oh My ZSH” plugins directory.
 
 ```sh
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 ##### Enforce Changes
